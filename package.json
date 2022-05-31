@@ -10,7 +10,7 @@
     "browserchannel": "^2.0",
     "extend": "^2.0.0",
     "through": "^2.3.4",
-    "ws": "~5.2.2"
+    "ws": "~2.3.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},
