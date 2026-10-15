@@ -50,6 +50,23 @@ var serverOptions = {
 var handlers = racerHighWay(store, serverOptions);
 ```
 
+Other server options (defaults shown):
+```
+var serverOptions = {
+  // Ping clients every pingInterval ms; terminate a client after
+  // maxMissedPongs pings in a row go unanswered
+  noPing: false,
+  pingInterval: 10000,
+  maxMissedPongs: 2,
+  // Terminate a client whose send buffer stays above wsMaxBufferMB
+  // for wsMaxBufferStallMs
+  wsMaxBufferMB: 5,
+  wsMaxBufferStallMs: 10000,
+  // Drop upgrade requests whose session lookup takes longer than this
+  upgradeTimeout: 30000
+}
+```
+
 ## Browserify
 
 Racer Highway will bundle the client browser script using Browserify in the
